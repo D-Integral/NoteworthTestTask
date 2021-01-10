@@ -26,6 +26,15 @@
 		847B772025AB7D5400C6F05D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B771F25AB7D5400C6F05D /* ListTableViewController.swift */; };
 		847B772125AB7D5400C6F05D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B771F25AB7D5400C6F05D /* ListTableViewController.swift */; };
 		847B772225AB7D5400C6F05D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B771F25AB7D5400C6F05D /* ListTableViewController.swift */; };
+		847B772A25AB819B00C6F05D /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B772925AB819B00C6F05D /* ListInteractor.swift */; };
+		847B772B25AB819B00C6F05D /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B772925AB819B00C6F05D /* ListInteractor.swift */; };
+		847B772C25AB819B00C6F05D /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B772925AB819B00C6F05D /* ListInteractor.swift */; };
+		847B773125AB81CD00C6F05D /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773025AB81CD00C6F05D /* ListPresenter.swift */; };
+		847B773225AB81CD00C6F05D /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773025AB81CD00C6F05D /* ListPresenter.swift */; };
+		847B773325AB81CD00C6F05D /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773025AB81CD00C6F05D /* ListPresenter.swift */; };
+		847B773825AB827A00C6F05D /* ListNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773725AB827900C6F05D /* ListNetworkingService.swift */; };
+		847B773925AB827A00C6F05D /* ListNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773725AB827900C6F05D /* ListNetworkingService.swift */; };
+		847B773A25AB827A00C6F05D /* ListNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773725AB827900C6F05D /* ListNetworkingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +72,9 @@
 		847B770225AB790D00C6F05D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		847B771825AB7CD000C6F05D /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		847B771F25AB7D5400C6F05D /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		847B772925AB819B00C6F05D /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		847B773025AB81CD00C6F05D /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		847B773725AB827900C6F05D /* ListNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNetworkingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +161,9 @@
 			children = (
 				847B771825AB7CD000C6F05D /* ListCoordinator.swift */,
 				847B771F25AB7D5400C6F05D /* ListTableViewController.swift */,
+				847B772925AB819B00C6F05D /* ListInteractor.swift */,
+				847B773725AB827900C6F05D /* ListNetworkingService.swift */,
+				847B773025AB81CD00C6F05D /* ListPresenter.swift */,
 			);
 			path = ListModule;
 			sourceTree = "<group>";
@@ -283,11 +298,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				847B76FC25AB78CF00C6F05D /* ApplicationCoordinator.swift in Sources */,
+				847B773125AB81CD00C6F05D /* ListPresenter.swift in Sources */,
 				847B770325AB790D00C6F05D /* Coordinator.swift in Sources */,
+				847B773825AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
 				847B771925AB7CD000C6F05D /* ListCoordinator.swift in Sources */,
 				847B76AF25AB725D00C6F05D /* AppDelegate.swift in Sources */,
 				847B76B125AB725D00C6F05D /* SceneDelegate.swift in Sources */,
 				847B76B925AB725D00C6F05D /* NoteworthTestTask.xcdatamodeld in Sources */,
+				847B772A25AB819B00C6F05D /* ListInteractor.swift in Sources */,
 				847B772025AB7D5400C6F05D /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847B773225AB81CD00C6F05D /* ListPresenter.swift in Sources */,
+				847B772B25AB819B00C6F05D /* ListInteractor.swift in Sources */,
 				847B771A25AB7CD000C6F05D /* ListCoordinator.swift in Sources */,
+				847B773925AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
 				847B76C925AB725F00C6F05D /* NoteworthTestTaskTests.swift in Sources */,
 				847B76FD25AB78CF00C6F05D /* ApplicationCoordinator.swift in Sources */,
 				847B772125AB7D5400C6F05D /* ListTableViewController.swift in Sources */,
@@ -308,7 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847B773325AB81CD00C6F05D /* ListPresenter.swift in Sources */,
+				847B772C25AB819B00C6F05D /* ListInteractor.swift in Sources */,
 				847B771B25AB7CD000C6F05D /* ListCoordinator.swift in Sources */,
+				847B773A25AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
 				847B76D425AB725F00C6F05D /* NoteworthTestTaskUITests.swift in Sources */,
 				847B76FE25AB78CF00C6F05D /* ApplicationCoordinator.swift in Sources */,
 				847B772225AB7D5400C6F05D /* ListTableViewController.swift in Sources */,
