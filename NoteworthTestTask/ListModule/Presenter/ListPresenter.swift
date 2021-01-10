@@ -9,7 +9,11 @@ import UIKit
 
 class ListPresenter {
   let viewController: ListTableViewController
-  var viewModel: [ListViewModelItem]
+  var viewModel: [ListViewModelItem] {
+    didSet {
+      viewController.update(withViewModel: viewModel)
+    }
+  }
   
   init() {
     self.viewController = ListTableViewController(nibName: nil, bundle: nil)
