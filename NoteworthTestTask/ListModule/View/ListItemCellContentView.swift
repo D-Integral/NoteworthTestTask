@@ -68,6 +68,8 @@ class ListItemCellContentView: UIView {
     self.titleTextView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
     self.titleTextView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     self.titleTextView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+    
+    self.titleTextView.isUserInteractionEnabled = false
   }
 
 }
