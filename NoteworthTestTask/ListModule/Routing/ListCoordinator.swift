@@ -9,7 +9,6 @@ import UIKit
 
 class ListCoordinator: Coordinator {
   private let navigationController: UINavigationController
-  private var listViewController: ListTableViewController?
   private let interactor: ListInteractor
   private let presenter: ListPresenter
 
@@ -18,16 +17,19 @@ class ListCoordinator: Coordinator {
     
     self.interactor = ListInteractor()
     self.presenter = ListPresenter()
+    
+    self.bind()
   }
 
   func start() {
-    let listTableViewController = ListTableViewController(nibName: nil, bundle: nil)
-    
-    listTableViewController.title = "List"
-    navigationController.pushViewController(listTableViewController, animated: true)
-
-    self.listViewController = listTableViewController
+    navigationController.pushViewController(self.presenter.viewController, animated: true)
     
     self.interactor.update()
+  }
+  
+  private func bind() {
+    self.interactor.redditItems.bind { updatedRedditItems in
+      self.presenter.updateViewModel(withRedditItems: updatedRedditItems)
+    }
   }
 }

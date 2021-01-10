@@ -8,5 +8,21 @@
 import UIKit
 
 class ListPresenter {
-
+  let viewController: ListTableViewController
+  var viewModel: [ListViewModelItem]
+  
+  init() {
+    self.viewController = ListTableViewController(nibName: nil, bundle: nil)
+    self.viewController.title = "Reddit Top"
+    
+    self.viewModel = []
+  }
+  
+  func updateViewModel(withRedditItems redditItems: [RedditItem]) {
+    let viewModelItems = redditItems.map {
+      ListViewModelItem(title: $0.title)
+    }
+    
+    viewModel = viewModelItems
+  }
 }

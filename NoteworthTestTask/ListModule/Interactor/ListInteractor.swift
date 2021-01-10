@@ -8,23 +8,24 @@
 import UIKit
 
 class ListInteractor {
+  var redditItems: Box<[RedditItem]>
+  
   private var networkingManager: ListNetworkingManager
-  private var redditItems: [RedditItem]
   
   init() {
     self.networkingManager = ListNetworkingManager()
-    self.redditItems = [RedditItem]()
+    self.redditItems = Box([RedditItem]())
   }
   
   func update() {
     self.networkingManager.update { redditItems in
-      self.redditItems = redditItems
+      self.redditItems.value = redditItems
     }
   }
 
   func loadNextPage() {
     self.networkingManager.loadNextPage { redditItems in
-      self.redditItems.append(contentsOf: redditItems)
+      self.redditItems.value.append(contentsOf: redditItems)
     }
   }
 }
