@@ -9,7 +9,7 @@ import Foundation
 
 struct ListItem: Codable {
   let title: String
-  let author_fullname: String
+  let author: String
   let created_utc: TimeInterval
   
   let thumbnail: String

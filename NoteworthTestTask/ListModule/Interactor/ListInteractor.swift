@@ -8,29 +8,23 @@
 import UIKit
 
 class ListInteractor {
-  private var networkingService: ListNetworkingService
-  private var listPages: [ListPage]
+  private var networkingManager: ListNetworkingManager
+  private var redditItems: [RedditItem]
   
   init() {
-    self.networkingService = ListNetworkingService()
-    self.listPages = [ListPage]()
+    self.networkingManager = ListNetworkingManager()
+    self.redditItems = [RedditItem]()
   }
   
   func update() {
-    self.networkingService.requestList { listPage in
-      print("The first data page has been received from the server: \(listPage)")
-      
-      self.listPages = [listPage]
-      
-      self.loadNextPage()
+    self.networkingManager.update { redditItems in
+      self.redditItems = redditItems
     }
   }
 
   func loadNextPage() {
-    self.networkingService.requestList(after: listPages.last?.data.after) { listPage in
-      print("The next page has been received from the server: \(listPage)")
-      
-      self.listPages.append(listPage)
+    self.networkingManager.loadNextPage { redditItems in
+      self.redditItems.append(contentsOf: redditItems)
     }
   }
 }
