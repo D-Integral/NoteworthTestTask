@@ -2,7 +2,7 @@
 //  ListItemCellContentView.swift
 //  NoteworthTestTask
 //
-//  Created by  Admin on 11.01.2021.
+//  Created by Dmytryk Skorokhod on 11.01.2021.
 //
 
 import UIKit
