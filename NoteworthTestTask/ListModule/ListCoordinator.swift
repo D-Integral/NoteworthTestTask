@@ -27,5 +27,7 @@ class ListCoordinator: Coordinator {
     navigationController.pushViewController(listTableViewController, animated: true)
 
     self.listViewController = listTableViewController
+    
+    self.interactor.update()
   }
 }

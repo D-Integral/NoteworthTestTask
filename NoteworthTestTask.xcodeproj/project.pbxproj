@@ -35,6 +35,18 @@
 		847B773825AB827A00C6F05D /* ListNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773725AB827900C6F05D /* ListNetworkingService.swift */; };
 		847B773925AB827A00C6F05D /* ListNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773725AB827900C6F05D /* ListNetworkingService.swift */; };
 		847B773A25AB827A00C6F05D /* ListNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773725AB827900C6F05D /* ListNetworkingService.swift */; };
+		847B773F25AB852C00C6F05D /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773E25AB852C00C6F05D /* ListPage.swift */; };
+		847B774025AB852C00C6F05D /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773E25AB852C00C6F05D /* ListPage.swift */; };
+		847B774125AB852C00C6F05D /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B773E25AB852C00C6F05D /* ListPage.swift */; };
+		847B774625AB885300C6F05D /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B774525AB885300C6F05D /* ListData.swift */; };
+		847B774725AB885300C6F05D /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B774525AB885300C6F05D /* ListData.swift */; };
+		847B774825AB885300C6F05D /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B774525AB885300C6F05D /* ListData.swift */; };
+		847B774D25AB88BA00C6F05D /* ListChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B774C25AB88BA00C6F05D /* ListChild.swift */; };
+		847B774E25AB88BA00C6F05D /* ListChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B774C25AB88BA00C6F05D /* ListChild.swift */; };
+		847B774F25AB88BA00C6F05D /* ListChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B774C25AB88BA00C6F05D /* ListChild.swift */; };
+		847B775425AB894200C6F05D /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B775325AB894200C6F05D /* ListItem.swift */; };
+		847B775525AB894200C6F05D /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B775325AB894200C6F05D /* ListItem.swift */; };
+		847B775625AB894200C6F05D /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B775325AB894200C6F05D /* ListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +87,10 @@
 		847B772925AB819B00C6F05D /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		847B773025AB81CD00C6F05D /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		847B773725AB827900C6F05D /* ListNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNetworkingService.swift; sourceTree = "<group>"; };
+		847B773E25AB852C00C6F05D /* ListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPage.swift; sourceTree = "<group>"; };
+		847B774525AB885300C6F05D /* ListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
+		847B774C25AB88BA00C6F05D /* ListChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChild.swift; sourceTree = "<group>"; };
+		847B775325AB894200C6F05D /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,13 +175,33 @@
 		847B76E425AB77C900C6F05D /* ListModule */ = {
 			isa = PBXGroup;
 			children = (
+				847B775D25AB8D9A00C6F05D /* Interactor */,
 				847B771825AB7CD000C6F05D /* ListCoordinator.swift */,
 				847B771F25AB7D5400C6F05D /* ListTableViewController.swift */,
-				847B772925AB819B00C6F05D /* ListInteractor.swift */,
-				847B773725AB827900C6F05D /* ListNetworkingService.swift */,
 				847B773025AB81CD00C6F05D /* ListPresenter.swift */,
 			);
 			path = ListModule;
+			sourceTree = "<group>";
+		};
+		847B775D25AB8D9A00C6F05D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				847B775E25AB8DA700C6F05D /* Networking */,
+				847B772925AB819B00C6F05D /* ListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		847B775E25AB8DA700C6F05D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				847B773725AB827900C6F05D /* ListNetworkingService.swift */,
+				847B773E25AB852C00C6F05D /* ListPage.swift */,
+				847B774525AB885300C6F05D /* ListData.swift */,
+				847B774C25AB88BA00C6F05D /* ListChild.swift */,
+				847B775325AB894200C6F05D /* ListItem.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,10 +339,14 @@
 				847B773825AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
 				847B771925AB7CD000C6F05D /* ListCoordinator.swift in Sources */,
 				847B76AF25AB725D00C6F05D /* AppDelegate.swift in Sources */,
+				847B773F25AB852C00C6F05D /* ListPage.swift in Sources */,
 				847B76B125AB725D00C6F05D /* SceneDelegate.swift in Sources */,
+				847B775425AB894200C6F05D /* ListItem.swift in Sources */,
 				847B76B925AB725D00C6F05D /* NoteworthTestTask.xcdatamodeld in Sources */,
 				847B772A25AB819B00C6F05D /* ListInteractor.swift in Sources */,
+				847B774D25AB88BA00C6F05D /* ListChild.swift in Sources */,
 				847B772025AB7D5400C6F05D /* ListTableViewController.swift in Sources */,
+				847B774625AB885300C6F05D /* ListData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +354,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847B775525AB894200C6F05D /* ListItem.swift in Sources */,
 				847B773225AB81CD00C6F05D /* ListPresenter.swift in Sources */,
 				847B772B25AB819B00C6F05D /* ListInteractor.swift in Sources */,
 				847B771A25AB7CD000C6F05D /* ListCoordinator.swift in Sources */,
 				847B773925AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
 				847B76C925AB725F00C6F05D /* NoteworthTestTaskTests.swift in Sources */,
+				847B774E25AB88BA00C6F05D /* ListChild.swift in Sources */,
 				847B76FD25AB78CF00C6F05D /* ApplicationCoordinator.swift in Sources */,
 				847B772125AB7D5400C6F05D /* ListTableViewController.swift in Sources */,
 				847B770425AB790D00C6F05D /* Coordinator.swift in Sources */,
+				847B774025AB852C00C6F05D /* ListPage.swift in Sources */,
+				847B774725AB885300C6F05D /* ListData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,14 +373,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847B775625AB894200C6F05D /* ListItem.swift in Sources */,
 				847B773325AB81CD00C6F05D /* ListPresenter.swift in Sources */,
 				847B772C25AB819B00C6F05D /* ListInteractor.swift in Sources */,
 				847B771B25AB7CD000C6F05D /* ListCoordinator.swift in Sources */,
 				847B773A25AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
 				847B76D425AB725F00C6F05D /* NoteworthTestTaskUITests.swift in Sources */,
+				847B774F25AB88BA00C6F05D /* ListChild.swift in Sources */,
 				847B76FE25AB78CF00C6F05D /* ApplicationCoordinator.swift in Sources */,
 				847B772225AB7D5400C6F05D /* ListTableViewController.swift in Sources */,
 				847B770525AB790D00C6F05D /* Coordinator.swift in Sources */,
+				847B774125AB852C00C6F05D /* ListPage.swift in Sources */,
+				847B774825AB885300C6F05D /* ListData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
