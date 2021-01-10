@@ -2,7 +2,7 @@
 //  NoteworthTestTaskTests.swift
 //  NoteworthTestTaskTests
 //
-//  Created by  Admin on 10.01.2021.
+//  Created by Dmytryk Skorokhod on 10.01.2021.
 //
 
 import XCTest
