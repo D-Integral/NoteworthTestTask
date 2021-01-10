@@ -19,6 +19,12 @@
 		844CBC8C25ABA80B004B3648 /* ListViewModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC8B25ABA80B004B3648 /* ListViewModelItem.swift */; };
 		844CBC8D25ABA80B004B3648 /* ListViewModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC8B25ABA80B004B3648 /* ListViewModelItem.swift */; };
 		844CBC8E25ABA80B004B3648 /* ListViewModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC8B25ABA80B004B3648 /* ListViewModelItem.swift */; };
+		844CBC9625ABAC81004B3648 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9525ABAC81004B3648 /* ListItemTableViewCell.swift */; };
+		844CBC9725ABAC81004B3648 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9525ABAC81004B3648 /* ListItemTableViewCell.swift */; };
+		844CBC9825ABAC81004B3648 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9525ABAC81004B3648 /* ListItemTableViewCell.swift */; };
+		844CBC9D25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9C25ABB28E004B3648 /* ListItemCellContentView.swift */; };
+		844CBC9E25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9C25ABB28E004B3648 /* ListItemCellContentView.swift */; };
+		844CBC9F25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9C25ABB28E004B3648 /* ListItemCellContentView.swift */; };
 		847B76AF25AB725D00C6F05D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B76AE25AB725D00C6F05D /* AppDelegate.swift */; };
 		847B76B125AB725D00C6F05D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B76B025AB725D00C6F05D /* SceneDelegate.swift */; };
 		847B76B925AB725D00C6F05D /* NoteworthTestTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 847B76B725AB725D00C6F05D /* NoteworthTestTask.xcdatamodeld */; };
@@ -83,6 +89,8 @@
 		844CBC7625AB9735004B3648 /* RedditItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditItem.swift; sourceTree = "<group>"; };
 		844CBC8125ABA318004B3648 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		844CBC8B25ABA80B004B3648 /* ListViewModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelItem.swift; sourceTree = "<group>"; };
+		844CBC9525ABAC81004B3648 /* ListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewCell.swift; sourceTree = "<group>"; };
+		844CBC9C25ABB28E004B3648 /* ListItemCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCellContentView.swift; sourceTree = "<group>"; };
 		847B76AB25AB725C00C6F05D /* NoteworthTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteworthTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847B76AE25AB725D00C6F05D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847B76B025AB725D00C6F05D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				847B771F25AB7D5400C6F05D /* ListTableViewController.swift */,
+				844CBC9525ABAC81004B3648 /* ListItemTableViewCell.swift */,
+				844CBC9C25ABB28E004B3648 /* ListItemCellContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,8 +409,10 @@
 				847B770325AB790D00C6F05D /* Coordinator.swift in Sources */,
 				847B773825AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
 				847B771925AB7CD000C6F05D /* ListCoordinator.swift in Sources */,
+				844CBC9625ABAC81004B3648 /* ListItemTableViewCell.swift in Sources */,
 				844CBC7725AB9735004B3648 /* RedditItem.swift in Sources */,
 				847B76AF25AB725D00C6F05D /* AppDelegate.swift in Sources */,
+				844CBC9D25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */,
 				847B773F25AB852C00C6F05D /* ListPage.swift in Sources */,
 				847B76B125AB725D00C6F05D /* SceneDelegate.swift in Sources */,
 				847B775425AB894200C6F05D /* ListItem.swift in Sources */,
@@ -425,6 +437,7 @@
 				847B771A25AB7CD000C6F05D /* ListCoordinator.swift in Sources */,
 				847B773925AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
 				844CBC8D25ABA80B004B3648 /* ListViewModelItem.swift in Sources */,
+				844CBC9725ABAC81004B3648 /* ListItemTableViewCell.swift in Sources */,
 				847B76C925AB725F00C6F05D /* NoteworthTestTaskTests.swift in Sources */,
 				847B774E25AB88BA00C6F05D /* ListChild.swift in Sources */,
 				844CBC7825AB9735004B3648 /* RedditItem.swift in Sources */,
@@ -432,6 +445,7 @@
 				847B76FD25AB78CF00C6F05D /* ApplicationCoordinator.swift in Sources */,
 				847B772125AB7D5400C6F05D /* ListTableViewController.swift in Sources */,
 				847B770425AB790D00C6F05D /* Coordinator.swift in Sources */,
+				844CBC9E25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */,
 				847B774025AB852C00C6F05D /* ListPage.swift in Sources */,
 				847B774725AB885300C6F05D /* ListData.swift in Sources */,
 			);
@@ -448,6 +462,7 @@
 				847B771B25AB7CD000C6F05D /* ListCoordinator.swift in Sources */,
 				847B773A25AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
 				844CBC8E25ABA80B004B3648 /* ListViewModelItem.swift in Sources */,
+				844CBC9825ABAC81004B3648 /* ListItemTableViewCell.swift in Sources */,
 				847B76D425AB725F00C6F05D /* NoteworthTestTaskUITests.swift in Sources */,
 				847B774F25AB88BA00C6F05D /* ListChild.swift in Sources */,
 				844CBC7925AB9735004B3648 /* RedditItem.swift in Sources */,
@@ -455,6 +470,7 @@
 				847B76FE25AB78CF00C6F05D /* ApplicationCoordinator.swift in Sources */,
 				847B772225AB7D5400C6F05D /* ListTableViewController.swift in Sources */,
 				847B770525AB790D00C6F05D /* Coordinator.swift in Sources */,
+				844CBC9F25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */,
 				847B774125AB852C00C6F05D /* ListPage.swift in Sources */,
 				847B774825AB885300C6F05D /* ListData.swift in Sources */,
 			);

@@ -8,20 +8,20 @@
 import UIKit
 
 class ListItemTableViewCell: UITableViewCell {
-  private let titleTextView: UITextView
+  private let cellContentView: ListItemCellContentView
   
-  var title: String? {
+  var viewModel: ListViewModelItem? {
     didSet {
-      titleTextView.text = title
+      cellContentView.viewModel = viewModel
     }
   }
   
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-    self.titleTextView = UITextView()
+    self.cellContentView = ListItemCellContentView(frame: CGRect.zero)
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
-    setupTitleTextView()
+    setupCellContentView()
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -29,17 +29,17 @@ class ListItemTableViewCell: UITableViewCell {
   }
   
   override func prepareForReuse() {
-    title = nil
+    viewModel = nil
   }
   
-  private func setupTitleTextView() {
-    self.contentView.addSubview(self.titleTextView)
+  private func setupCellContentView() {
+    self.contentView.addSubview(self.cellContentView)
     
-    self.titleTextView.translatesAutoresizingMaskIntoConstraints = false
+    self.cellContentView.translatesAutoresizingMaskIntoConstraints = false
     
-    self.titleTextView.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
-    self.titleTextView.leftAnchor.constraint(equalTo: self.contentView.leftAnchor).isActive = true
-    self.titleTextView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
-    self.titleTextView.rightAnchor.constraint(equalTo: self.contentView.rightAnchor).isActive = true
+    self.cellContentView.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
+    self.cellContentView.leftAnchor.constraint(equalTo: self.contentView.leftAnchor).isActive = true
+    self.cellContentView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
+    self.cellContentView.rightAnchor.constraint(equalTo: self.contentView.rightAnchor).isActive = true
   }
 }

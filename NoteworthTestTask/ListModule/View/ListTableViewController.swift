@@ -42,7 +42,7 @@ class ListTableViewController: UITableViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
     
     if let cell = cell as? ListItemTableViewCell {
-      cell.title = viewModel[indexPath.row].title
+      cell.viewModel = viewModel[indexPath.row]
     }
     
     return cell
