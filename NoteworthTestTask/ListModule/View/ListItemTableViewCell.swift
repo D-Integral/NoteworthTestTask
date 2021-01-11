@@ -38,8 +38,8 @@ class ListItemTableViewCell: UITableViewCell {
     self.cellContentView.translatesAutoresizingMaskIntoConstraints = false
     
     self.cellContentView.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
-    self.cellContentView.leftAnchor.constraint(equalTo: self.contentView.leftAnchor).isActive = true
+    self.cellContentView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
     self.cellContentView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
-    self.cellContentView.rightAnchor.constraint(equalTo: self.contentView.rightAnchor).isActive = true
+    self.cellContentView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
   }
 }

@@ -33,7 +33,11 @@ class ApplicationCoordinator: Coordinator, ListCoordinatorDelegate {
   }
   
   func listCoordinatorDidSelectViewModel(_ viewModel: ListViewModelItem) {
-    showItemDetails(with: viewModel)
+    DispatchQueue.main.async { [weak self] in
+      guard let self = self else { return }
+      
+      self.showItemDetails(with: viewModel)
+    }
   }
   
   private func showItemDetails(with viewModel: ListViewModelItem) {

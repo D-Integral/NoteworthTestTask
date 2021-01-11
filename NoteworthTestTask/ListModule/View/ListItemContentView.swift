@@ -43,8 +43,8 @@ class ListItemContentView: UIView {
     self.authorLabel.translatesAutoresizingMaskIntoConstraints = false
     
     self.authorLabel.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-    self.authorLabel.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-    self.authorLabel.rightAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+    self.authorLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+    self.authorLabel.trailingAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
     self.authorLabel.heightAnchor.constraint(equalToConstant: 30.0).isActive = true
   }
   
@@ -54,8 +54,8 @@ class ListItemContentView: UIView {
     self.timeAgoLabel.translatesAutoresizingMaskIntoConstraints = false
     
     self.timeAgoLabel.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-    self.timeAgoLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-    self.timeAgoLabel.leftAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+    self.timeAgoLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+    self.timeAgoLabel.leadingAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
     self.timeAgoLabel.heightAnchor.constraint(equalToConstant: 30.0).isActive = true
   }
   
@@ -65,9 +65,9 @@ class ListItemContentView: UIView {
     self.titleTextView.translatesAutoresizingMaskIntoConstraints = false
     
     self.titleTextView.topAnchor.constraint(equalTo: self.authorLabel.bottomAnchor).isActive = true
-    self.titleTextView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+    self.titleTextView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
     self.titleTextView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-    self.titleTextView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+    self.titleTextView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
     
     self.titleTextView.isUserInteractionEnabled = false
   }
