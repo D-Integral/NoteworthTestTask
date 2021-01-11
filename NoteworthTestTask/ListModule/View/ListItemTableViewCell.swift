@@ -8,7 +8,7 @@
 import UIKit
 
 class ListItemTableViewCell: UITableViewCell {
-  private let cellContentView: ListItemCellContentView
+  private let cellContentView: ListItemContentView
   
   var viewModel: ListViewModelItem? {
     didSet {
@@ -17,7 +17,7 @@ class ListItemTableViewCell: UITableViewCell {
   }
   
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-    self.cellContentView = ListItemCellContentView(frame: CGRect.zero)
+    self.cellContentView = ListItemContentView(frame: CGRect.zero)
     
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     

@@ -7,12 +7,14 @@
 
 import UIKit
 
-class ApplicationCoordinator: Coordinator {
+class ApplicationCoordinator: Coordinator, ListCoordinatorDelegate {
   
   let window: UIWindow
   let rootViewController: UINavigationController
   
   let listCoordinator: ListCoordinator
+  
+  var itemDetailsCoordinator: ItemDetailsCoordinator? = nil
   
   init(window: UIWindow) {
     self.window = window
@@ -25,7 +27,19 @@ class ApplicationCoordinator: Coordinator {
   
   func start() {
     window.rootViewController = rootViewController
+    listCoordinator.addListener(self)
     listCoordinator.start()
     window.makeKeyAndVisible()
+  }
+  
+  func listCoordinatorDidSelectViewModel(_ viewModel: ListViewModelItem) {
+    showItemDetails(with: viewModel)
+  }
+  
+  private func showItemDetails(with viewModel: ListViewModelItem) {
+    itemDetailsCoordinator = ItemDetailsCoordinator(navigationController: rootViewController,
+                                                    viewModel: viewModel)
+    
+    itemDetailsCoordinator?.start()
   }
 }

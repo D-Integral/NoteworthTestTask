@@ -7,10 +7,16 @@
 
 import UIKit
 
+protocol ListViewControllerDelegate: class {
+  func listViewControllerDidSelectViewModel(_ viewModel: ListViewModelItem)
+}
+
 class ListTableViewController: UITableViewController {
   
   private var viewModel = [ListViewModelItem]()
   private let cellReuseIdentifier = "cellReuseIdentifier"
+  
+  let multicastDelegate = MulticastDelegate<ListViewControllerDelegate>()
   
   func update(withViewModel newViewModel: [ListViewModelItem]) {
     self.viewModel = newViewModel
@@ -26,6 +32,23 @@ class ListTableViewController: UITableViewController {
     super.viewDidLoad()
     
     tableView.register(ListItemTableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+  }
+  
+  public func addListener(_ listener: ListViewControllerDelegate) {
+    multicastDelegate.addDelegate(listener)
+  }
+  
+  
+  public func removeListener(_ listener: ListViewControllerDelegate) {
+    multicastDelegate.removeDelegate(listener)
+  }
+  
+  private func didSelectViewModelItem(at indexPath: IndexPath) {
+    let viewModelItem = self.viewModel[indexPath.row]
+    
+    multicastDelegate.invokeDelegates { listener in
+      listener.listViewControllerDidSelectViewModel(viewModelItem)
+    }
   }
   
   // MARK: - Table view data source
@@ -50,5 +73,9 @@ class ListTableViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
       return 100.0
+  }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    didSelectViewModelItem(at: indexPath)
   }
 }

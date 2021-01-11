@@ -1,5 +1,5 @@
 //
-//  ListItemCellContentView.swift
+//  ListItemContentView.swift
 //  NoteworthTestTask
 //
 //  Created by Dmytryk Skorokhod on 11.01.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListItemCellContentView: UIView {
+class ListItemContentView: UIView {
   
   private let authorLabel: UILabel
   private let timeAgoLabel: UILabel

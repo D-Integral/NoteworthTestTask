@@ -7,7 +7,11 @@
 
 import UIKit
 
-class ListPresenter {
+protocol ListPresenterDelegate: class {
+  func listPresenterDidSelectViewModel(_ viewModel: ListViewModelItem)
+}
+
+class ListPresenter: ListViewControllerDelegate {
   let viewController: ListTableViewController
   var viewModel: [ListViewModelItem] {
     didSet {
@@ -15,11 +19,15 @@ class ListPresenter {
     }
   }
   
+  let multicastDelegate = MulticastDelegate<ListPresenterDelegate>()
+  
   init() {
     self.viewController = ListTableViewController(nibName: nil, bundle: nil)
     self.viewController.title = "Reddit Top"
     
     self.viewModel = []
+    
+    self.viewController.addListener(self)
   }
   
   func updateViewModel(withRedditItems redditItems: [RedditItem]) {
@@ -42,5 +50,20 @@ class ListPresenter {
     let formatter = RelativeDateTimeFormatter()
     formatter.unitsStyle = .full
     return formatter.localizedString(for: date, relativeTo: Date())
+  }
+  
+  public func addListener(_ listener: ListPresenterDelegate) {
+    multicastDelegate.addDelegate(listener)
+  }
+  
+  
+  public func removeListener(_ listener: ListPresenterDelegate) {
+    multicastDelegate.removeDelegate(listener)
+  }
+  
+  func listViewControllerDidSelectViewModel(_ viewModel: ListViewModelItem) {
+    multicastDelegate.invokeDelegates { listener in
+      listener.listPresenterDidSelectViewModel(viewModel)
+    }
   }
 }

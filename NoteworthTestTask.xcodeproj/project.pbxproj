@@ -22,9 +22,21 @@
 		844CBC9625ABAC81004B3648 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9525ABAC81004B3648 /* ListItemTableViewCell.swift */; };
 		844CBC9725ABAC81004B3648 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9525ABAC81004B3648 /* ListItemTableViewCell.swift */; };
 		844CBC9825ABAC81004B3648 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9525ABAC81004B3648 /* ListItemTableViewCell.swift */; };
-		844CBC9D25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9C25ABB28E004B3648 /* ListItemCellContentView.swift */; };
-		844CBC9E25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9C25ABB28E004B3648 /* ListItemCellContentView.swift */; };
-		844CBC9F25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9C25ABB28E004B3648 /* ListItemCellContentView.swift */; };
+		844CBC9D25ABB28E004B3648 /* ListItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9C25ABB28E004B3648 /* ListItemContentView.swift */; };
+		844CBC9E25ABB28E004B3648 /* ListItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9C25ABB28E004B3648 /* ListItemContentView.swift */; };
+		844CBC9F25ABB28E004B3648 /* ListItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBC9C25ABB28E004B3648 /* ListItemContentView.swift */; };
+		844CBCA425AC55FD004B3648 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCA325AC55FD004B3648 /* MulticastDelegate.swift */; };
+		844CBCA525AC55FD004B3648 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCA325AC55FD004B3648 /* MulticastDelegate.swift */; };
+		844CBCA625AC55FD004B3648 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCA325AC55FD004B3648 /* MulticastDelegate.swift */; };
+		844CBCB025AC5AA8004B3648 /* ItemDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCAF25AC5AA8004B3648 /* ItemDetailsCoordinator.swift */; };
+		844CBCB125AC5AA8004B3648 /* ItemDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCAF25AC5AA8004B3648 /* ItemDetailsCoordinator.swift */; };
+		844CBCB225AC5AA8004B3648 /* ItemDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCAF25AC5AA8004B3648 /* ItemDetailsCoordinator.swift */; };
+		844CBCBE25AC5B57004B3648 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCBD25AC5B57004B3648 /* ItemDetailsViewController.swift */; };
+		844CBCBF25AC5B57004B3648 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCBD25AC5B57004B3648 /* ItemDetailsViewController.swift */; };
+		844CBCC025AC5B57004B3648 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCBD25AC5B57004B3648 /* ItemDetailsViewController.swift */; };
+		844CBCC825AC5B7D004B3648 /* ItemDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCC725AC5B7D004B3648 /* ItemDetailsPresenter.swift */; };
+		844CBCC925AC5B7D004B3648 /* ItemDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCC725AC5B7D004B3648 /* ItemDetailsPresenter.swift */; };
+		844CBCCA25AC5B7D004B3648 /* ItemDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBCC725AC5B7D004B3648 /* ItemDetailsPresenter.swift */; };
 		847B76AF25AB725D00C6F05D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B76AE25AB725D00C6F05D /* AppDelegate.swift */; };
 		847B76B125AB725D00C6F05D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B76B025AB725D00C6F05D /* SceneDelegate.swift */; };
 		847B76B925AB725D00C6F05D /* NoteworthTestTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 847B76B725AB725D00C6F05D /* NoteworthTestTask.xcdatamodeld */; };
@@ -90,7 +102,11 @@
 		844CBC8125ABA318004B3648 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		844CBC8B25ABA80B004B3648 /* ListViewModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelItem.swift; sourceTree = "<group>"; };
 		844CBC9525ABAC81004B3648 /* ListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewCell.swift; sourceTree = "<group>"; };
-		844CBC9C25ABB28E004B3648 /* ListItemCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCellContentView.swift; sourceTree = "<group>"; };
+		844CBC9C25ABB28E004B3648 /* ListItemContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemContentView.swift; sourceTree = "<group>"; };
+		844CBCA325AC55FD004B3648 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		844CBCAF25AC5AA8004B3648 /* ItemDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsCoordinator.swift; sourceTree = "<group>"; };
+		844CBCBD25AC5B57004B3648 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		844CBCC725AC5B7D004B3648 /* ItemDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsPresenter.swift; sourceTree = "<group>"; };
 		847B76AB25AB725C00C6F05D /* NoteworthTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteworthTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847B76AE25AB725D00C6F05D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847B76B025AB725D00C6F05D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,7 +171,7 @@
 			children = (
 				847B771F25AB7D5400C6F05D /* ListTableViewController.swift */,
 				844CBC9525ABAC81004B3648 /* ListItemTableViewCell.swift */,
-				844CBC9C25ABB28E004B3648 /* ListItemCellContentView.swift */,
+				844CBC9C25ABB28E004B3648 /* ListItemContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,8 +198,59 @@
 			children = (
 				847B770225AB790D00C6F05D /* Coordinator.swift */,
 				844CBC8125ABA318004B3648 /* Box.swift */,
+				844CBCA325AC55FD004B3648 /* MulticastDelegate.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		844CBCAA25AC5A42004B3648 /* ItemDetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				844CBCBA25AC5B14004B3648 /* View */,
+				844CBCBB25AC5B1A004B3648 /* Interactor */,
+				844CBCB925AC5B0D004B3648 /* Presenter */,
+				844CBCBC25AC5B26004B3648 /* Entity */,
+				844CBCAE25AC5A84004B3648 /* Routing */,
+			);
+			path = ItemDetailsModule;
+			sourceTree = "<group>";
+		};
+		844CBCAE25AC5A84004B3648 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				844CBCAF25AC5AA8004B3648 /* ItemDetailsCoordinator.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		844CBCB925AC5B0D004B3648 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				844CBCC725AC5B7D004B3648 /* ItemDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		844CBCBA25AC5B14004B3648 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				844CBCBD25AC5B57004B3648 /* ItemDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		844CBCBB25AC5B1A004B3648 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		844CBCBC25AC5B26004B3648 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		847B76A225AB725C00C6F05D = {
@@ -211,6 +278,7 @@
 			children = (
 				844CBC8025ABA301004B3648 /* Shared */,
 				847B76E425AB77C900C6F05D /* ListModule */,
+				844CBCAA25AC5A42004B3648 /* ItemDetailsModule */,
 				847B76AE25AB725D00C6F05D /* AppDelegate.swift */,
 				847B76B025AB725D00C6F05D /* SceneDelegate.swift */,
 				847B76FB25AB78CF00C6F05D /* ApplicationCoordinator.swift */,
@@ -405,6 +473,7 @@
 			files = (
 				847B76FC25AB78CF00C6F05D /* ApplicationCoordinator.swift in Sources */,
 				847B773125AB81CD00C6F05D /* ListPresenter.swift in Sources */,
+				844CBCA425AC55FD004B3648 /* MulticastDelegate.swift in Sources */,
 				844CBC6C25AB94F8004B3648 /* ListNetworkingManager.swift in Sources */,
 				847B770325AB790D00C6F05D /* Coordinator.swift in Sources */,
 				847B773825AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
@@ -412,14 +481,17 @@
 				844CBC9625ABAC81004B3648 /* ListItemTableViewCell.swift in Sources */,
 				844CBC7725AB9735004B3648 /* RedditItem.swift in Sources */,
 				847B76AF25AB725D00C6F05D /* AppDelegate.swift in Sources */,
-				844CBC9D25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */,
+				844CBCC825AC5B7D004B3648 /* ItemDetailsPresenter.swift in Sources */,
+				844CBC9D25ABB28E004B3648 /* ListItemContentView.swift in Sources */,
 				847B773F25AB852C00C6F05D /* ListPage.swift in Sources */,
 				847B76B125AB725D00C6F05D /* SceneDelegate.swift in Sources */,
 				847B775425AB894200C6F05D /* ListItem.swift in Sources */,
 				847B76B925AB725D00C6F05D /* NoteworthTestTask.xcdatamodeld in Sources */,
+				844CBCBE25AC5B57004B3648 /* ItemDetailsViewController.swift in Sources */,
 				847B772A25AB819B00C6F05D /* ListInteractor.swift in Sources */,
 				844CBC8225ABA318004B3648 /* Box.swift in Sources */,
 				844CBC8C25ABA80B004B3648 /* ListViewModelItem.swift in Sources */,
+				844CBCB025AC5AA8004B3648 /* ItemDetailsCoordinator.swift in Sources */,
 				847B774D25AB88BA00C6F05D /* ListChild.swift in Sources */,
 				847B772025AB7D5400C6F05D /* ListTableViewController.swift in Sources */,
 				847B774625AB885300C6F05D /* ListData.swift in Sources */,
@@ -432,8 +504,11 @@
 			files = (
 				844CBC6D25AB94F8004B3648 /* ListNetworkingManager.swift in Sources */,
 				847B775525AB894200C6F05D /* ListItem.swift in Sources */,
+				844CBCC925AC5B7D004B3648 /* ItemDetailsPresenter.swift in Sources */,
 				847B773225AB81CD00C6F05D /* ListPresenter.swift in Sources */,
 				847B772B25AB819B00C6F05D /* ListInteractor.swift in Sources */,
+				844CBCB125AC5AA8004B3648 /* ItemDetailsCoordinator.swift in Sources */,
+				844CBCBF25AC5B57004B3648 /* ItemDetailsViewController.swift in Sources */,
 				847B771A25AB7CD000C6F05D /* ListCoordinator.swift in Sources */,
 				847B773925AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
 				844CBC8D25ABA80B004B3648 /* ListViewModelItem.swift in Sources */,
@@ -442,10 +517,11 @@
 				847B774E25AB88BA00C6F05D /* ListChild.swift in Sources */,
 				844CBC7825AB9735004B3648 /* RedditItem.swift in Sources */,
 				844CBC8325ABA318004B3648 /* Box.swift in Sources */,
+				844CBCA525AC55FD004B3648 /* MulticastDelegate.swift in Sources */,
 				847B76FD25AB78CF00C6F05D /* ApplicationCoordinator.swift in Sources */,
 				847B772125AB7D5400C6F05D /* ListTableViewController.swift in Sources */,
 				847B770425AB790D00C6F05D /* Coordinator.swift in Sources */,
-				844CBC9E25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */,
+				844CBC9E25ABB28E004B3648 /* ListItemContentView.swift in Sources */,
 				847B774025AB852C00C6F05D /* ListPage.swift in Sources */,
 				847B774725AB885300C6F05D /* ListData.swift in Sources */,
 			);
@@ -457,8 +533,11 @@
 			files = (
 				844CBC6E25AB94F8004B3648 /* ListNetworkingManager.swift in Sources */,
 				847B775625AB894200C6F05D /* ListItem.swift in Sources */,
+				844CBCCA25AC5B7D004B3648 /* ItemDetailsPresenter.swift in Sources */,
 				847B773325AB81CD00C6F05D /* ListPresenter.swift in Sources */,
 				847B772C25AB819B00C6F05D /* ListInteractor.swift in Sources */,
+				844CBCB225AC5AA8004B3648 /* ItemDetailsCoordinator.swift in Sources */,
+				844CBCC025AC5B57004B3648 /* ItemDetailsViewController.swift in Sources */,
 				847B771B25AB7CD000C6F05D /* ListCoordinator.swift in Sources */,
 				847B773A25AB827A00C6F05D /* ListNetworkingService.swift in Sources */,
 				844CBC8E25ABA80B004B3648 /* ListViewModelItem.swift in Sources */,
@@ -467,10 +546,11 @@
 				847B774F25AB88BA00C6F05D /* ListChild.swift in Sources */,
 				844CBC7925AB9735004B3648 /* RedditItem.swift in Sources */,
 				844CBC8425ABA318004B3648 /* Box.swift in Sources */,
+				844CBCA625AC55FD004B3648 /* MulticastDelegate.swift in Sources */,
 				847B76FE25AB78CF00C6F05D /* ApplicationCoordinator.swift in Sources */,
 				847B772225AB7D5400C6F05D /* ListTableViewController.swift in Sources */,
 				847B770525AB790D00C6F05D /* Coordinator.swift in Sources */,
-				844CBC9F25ABB28E004B3648 /* ListItemCellContentView.swift in Sources */,
+				844CBC9F25ABB28E004B3648 /* ListItemContentView.swift in Sources */,
 				847B774125AB852C00C6F05D /* ListPage.swift in Sources */,
 				847B774825AB885300C6F05D /* ListData.swift in Sources */,
 			);
@@ -627,6 +707,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W83JADSQVF;
 				INFOPLIST_FILE = NoteworthTestTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,6 +727,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W83JADSQVF;
 				INFOPLIST_FILE = NoteworthTestTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
